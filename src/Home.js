@@ -8,7 +8,7 @@ function Home() {
         <div className="home__container">
           <div>
             <img
-              src="https://theme.hstatic.net/200000201725/1000749045/14/slideshow_3.jpg?v=588"
+              src="https://store.manutd.com/content/ws/all/3622fa52-0948-41ae-a757-23f4ef78ac8c__3200X1224.png"
               alt=""
               className="home__image"
             />

@@ -11,10 +11,12 @@ function Header() {
     // header chia ra làm 3 phần gồm logo,search,nav(gồm các item :login ,giỏ hàng..)
     <>
       <div className="header">
-        <div className="header__logo">
-          <StorefrontIcon className="header__logoImage" fontSize="large" />
-          <h2 className="header__logoTitle">eShop</h2>
-        </div>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <div className="header__logo">
+            <StorefrontIcon className="header__logoImage" fontSize="large" />
+            <h2 className="header__logoTitle">eShop</h2>
+          </div>
+        </Link>
         <div className="header__search">
           <input type="text" className="header__searchInput" />
           <SearchIcon className="header__searchIcon" />
@@ -28,14 +30,13 @@ function Header() {
             <span className="nav__itemLineOne">Hello Guest</span>
             <span className="nav__itemLineTwo">YourShop</span>
           </div>
-          <div className="nav__item nav__cart">
-            <ShoppingBasketIcon className="itemBasket" />
-            <span className="nav__itemLineTwo nav__basketCount">0</span>
-          </div>
+          <Link to="/check" style={{ textDecoration: "none" }}>
+            <div className="itemBasket">
+              <ShoppingBasketIcon />
+              <span className="nav__itemLineTwo nav__basketCount">0</span>
+            </div>
+          </Link>
         </div>
-        <li>
-          <Link to="/check">aaa</Link>
-        </li>
       </div>
       <Outlet />
     </>

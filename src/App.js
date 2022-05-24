@@ -6,12 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      {/* <Header />
-      <Home /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />}>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/check" element={<Checkout />} />
           </Route>
         </Routes>

@@ -69,10 +69,12 @@
     font-weight:800;
 }
 
-.nav__cart{
-    
-    flex-direction: row;
-}
+
 .nav__basketCount{
     padding: 5px;
+}
+
+.itemBasket{
+    color:white;
+   
 }
